@@ -9,6 +9,8 @@ package cloud.simple.web;
 
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,7 +22,11 @@ import cloud.simple.service.UserService;
 
 
 @RestController
+@RefreshScope
 public class UserController {
+
+	@Value("${username}")
+	private String username;
 		
 	@Autowired
 	UserService userService;
@@ -30,6 +36,7 @@ public class UserController {
 	
 	@RequestMapping(value="/users")
 	public ResponseEntity<List<User>> readUserInfo(){
+		System.out.println(username + " Hello World !");
 		List<User> users=userService.readUserInfo();		
 		return new ResponseEntity<List<User>>(users,HttpStatus.OK);
 	}
