@@ -1,13 +1,15 @@
 package cloud.simple.service.conf;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 
 @ConfigurationProperties(prefix = DataSourceProperties.DS, ignoreUnknownFields = false)
+@RefreshScope
 public class DataSourceProperties {
 
 	//对应配置文件里的配置键
 	public final static String DS="mysqldb.datasource";	
-	private String driverClassName ="com.mysql.jdbc.Driver";
+	private String driverClassName ="org.postgresql.Driver";
 	
 	private String url; 
 	private String username; 

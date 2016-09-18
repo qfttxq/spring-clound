@@ -23,6 +23,11 @@
         <module>cloud-thrift-client</module>
         <module>cloud-thrift-interface</module>
         <module>cloud-thrift-server</module>
+        <module>cloud-zipkin</module>
+        <module>cloud-zipkin-service2</module>
+        <module>colud-zipkin-service3</module>
+        <module>colud-zipkin-service4</module>
+        <module>cloud-zuul</module>
     </modules>
 
 </project>
