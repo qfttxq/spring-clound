@@ -5,7 +5,7 @@
 
 	<groupId>cloud</groupId>
 	<artifactId>cloud-config-server</artifactId>
-	<version>0.0.1</version>
+	<version>1.0.0</version>
 	<packaging>jar</packaging>
 
 	<name>cloud-config-serve</name>
