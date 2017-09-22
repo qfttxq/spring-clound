@@ -10,3 +10,23 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+
+spring-cloud\.iml
+
+logs/
+
+colud-zipkin-service3/colud-zipkin-service3\.iml
+
+cloud-config-server/target/
+
+\.idea/
+
+cloud-config-server/cloud-config-server\.iml
+
+cloud-eureka-server/target/
+
+*.iml
+
+cloud-simple-log4j/target/
+
+cloud-simple-log4j\.log
